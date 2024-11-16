@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pleto maker</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="canvas.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+<body>
+
+    <nav >
+        <a href="index.html">
+            <img src="img/logo.png" class="logo" alt="">
+        </a>
+        <button>
+            BUY NOW
+            <img src="img/arrow.png" alt="">
+        </button>
+    </nav>
+
+    <div class="root mk">
+
+        <div class="header" data-aos="fade-down" >
+            <div class="content pletomakercontent" data-aos="fade-down" >
+                <h1 data-aos="zoom-in" data-aos-duration="600" data-text="pleto maker">
+                    pleto maker
+                </h1>
+                <p>VARY NICE GAME TO SHARE WIF ZA FAMILY!</p>
+            </div>
+        </div>
+
+
+                <div class="pletomakerwrappermain"  data-aos="fade-up" >
+                
+                    <img src="https://pleto.xyz/pletomaker/img/rocket.png" class="rocket" alt="">
+
+                    <div class="pletomaker">
+                        
+                        <div class="image">
+                            <canvas id="c">
+                            </canvas>
+                            <div class="addImage">
+                                <!-- <img src="upload.png" alt=""> -->
+                                <p>CLICK TO UBLOAD UR IMAGE HEER</p>
+                                <input type="file" name="" id="imageFile">
+                            </div>
+                        </div>
+
+                        <div class="tools">
+                            <button class="saveBtn" onclick="addImage('logo.png')">CLICK TO ADD PLETO HEAD</button>
+                            <button class="saveBtn green" onclick="saveCanvas()">SAVE MEME</button>
+                            <button class="saveBtn red" onclick="resetCanvas()">OH NO RESTART</button>
+                        </div>
+        
+                    </div>
+
+                </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        <p>time to zcroll beck up ser!</p>
+        <p>pleto.xyz</p>
+    </div>
+
+    <div class="entering">
+
+        <img src="img/mbg.png" class="mbg" alt=""> 
+        <div class="contents">
+            <p>building terrain</p>
+            <div class="loaddd">
+                <div class="innerload"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="index.js"></script>
+    <script src="pletomaker/canvas.js"></script>
+
+    <script>
+        setTimeout(() => {
+            document.querySelector('.entering').style.display = 'none'
+        }, 1500);
+    </script>
+</body>
+</html>
